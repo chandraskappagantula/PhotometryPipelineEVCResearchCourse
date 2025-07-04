@@ -15,15 +15,15 @@ import math
 import os
 
 
-rootdirectory = "C://Users//chand//OneDrive//Desktop//EVC_RESEARCH//registered_subs"
+rootdirectory = "insert_root_directory_here"
 
 magnitudes = []
 times = []
 count = 1
 
 
-mainfile = fits.open(f"C://Users//chand//OneDrive//Desktop//EVC_RESEARCH//registered_subs//r_lights_00035.fit")
-mainfile2 = fits.open(f"C://Users//chand//OneDrive//Desktop//EVC_RESEARCH//registered_subs//r_lights_00001.fit")
+mainfile = fits.open(f"insert_directory_here")
+mainfile2 = fits.open(f"insert_directory_here")
 
 fig, ax = plt.subplot()
 fig2, ax2 = plt.subplot()
