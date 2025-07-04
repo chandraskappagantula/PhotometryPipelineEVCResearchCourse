@@ -14,3 +14,13 @@ This program uses astropy to calculate pixel counts, and conducts differential p
 `main.py` contains code that takes processed `.fit` files, uses the reference's magnitude and zero-point to conduct differential photometry and return a light-curve. Other modules within the astropy or gatspy implementation can be used for further time-series analysis. 
 
 The `apertures` folder contains examples of the subexposures as displayed in matplotlib with the fitted apertures. These can be edited through the code as desired. 
+
+Currently, the raw `.fits` files must be aligned such that the point sources are in the same place in the images. A free astro-specific software like SIRIL, or a paid one like PixInsight, can be used for this alignment. In the future, the alignment can be done through the code itself. 
+
+To run the code, place the aligned `.fits` files in the same director as `.main.py`. Once the program has run, it will generate an `apertures` folder with all the subexposures as displayed in matplotlib. 
+
+# Roadmap/Future Work
+
+ - Create a GUI that enables easy aperture shaping/specification, and display of results (tkinter implementation)
+ - Correct calculation of magnitude log space to return correct magnitude calculations
+ - Program star alignment to be done within the program itself
